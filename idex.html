@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola¡ @natbamn te habal snoopy </title>
+    <style>
+       .body{ 
+        background-color: rgb(196, 163, 163);
+        text-align: center;}
+     .body__title{color: rgb(199, 58, 58);} 
+     .body__img {
+        width: 100%;
+        border-radius: 50%;
+     }
+    
+     
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title">Hola¡ @natbamn te habla snoopy</h1> 
+    <img src="https://wallpaperaccess.com/full/1161980.jpg" 
+    alt="foto mia class"="body__img" >
+    <button id="yes">Entrar ♡</button>
+    <button id="no">no quiero por ahora :c</button>
+
+    <script>
+        const vutonsi = document.getElementById("yes");
+        const vutonNo = document.getElementById("no");
+
+        const PRECIOSAA = () =>{
+          alert('eres preciosa y que nadie te lo haga dudar');
+          alert('Espero te pueda gustar, se que parece simple pero solo se las cosas basicas y me costo hacerlo. pdt: se que te gusta esta cancion');
+
+          location.href = 'https://www.youtube.com/watch?v=j9yEL3B5Cvk'
+
+        }
+        const evitar = () =>{
+            vutonNo.style.position = 'absolute';
+            vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+            vutonNo.left = (Math.random() * window.innerWidth) + 'px';
+        }
+        
+        vutonsi.addEventListener('click', PRECIOSAA);
+        vutonNo.addEventListener('mouseover', evitar);
+    </script>
+</body>
+</html>
